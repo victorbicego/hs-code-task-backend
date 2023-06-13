@@ -32,7 +32,7 @@ public class DataInitializer {
 
         TimeIntervalEntity timeInterval2 = new TimeIntervalEntity();
         timeInterval2.setStartTime(LocalDateTime.of(2023, 2, 1, 12, 0, 0));
-        timeInterval2.setEndTime(LocalDateTime.of(2023, 3, 31, 24, 0, 0));
+        timeInterval2.setEndTime(LocalDateTime.of(2023, 3, 31, 23, 59, 0));
 
         CapacityEntity capacity1 = new CapacityEntity();
         capacity1.setMaxCapacity(300);
@@ -54,7 +54,7 @@ public class DataInitializer {
         event2.setTitle("Start up Mentoring");
         event2.setPrice(3000.00);
         event2.setDescription(
-                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.");
+                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet.");
         event2.setAddress(address2);
         event2.setTimeInterval(timeInterval2);
         event2.setCapacity(capacity2);
