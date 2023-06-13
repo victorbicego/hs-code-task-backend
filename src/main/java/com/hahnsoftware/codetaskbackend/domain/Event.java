@@ -1,5 +1,6 @@
 package com.hahnsoftware.codetaskbackend.domain;
 
+import com.hahnsoftware.codetaskbackend.exceptions.AttendantNotSubscribedException;
 import lombok.Data;
 
 @Data
@@ -12,11 +13,11 @@ public class Event {
     private Capacity capacity;
     private TimeInterval timeInterval;
 
-    public subscribeAttendant(){
-        if(capacity.hasAvailableSeat()){
+    public void subscribeAttendant() throws AttendantNotSubscribedException {
+        if (capacity.hasAvailableSeat()) {
             capacity.addAttendant();
-        }else{
-            throw new EventNotSubscribedException("Event has no available seat.");
+        } else {
+            throw new AttendantNotSubscribedException("Event has no available seat.");
         }
     }
 }
