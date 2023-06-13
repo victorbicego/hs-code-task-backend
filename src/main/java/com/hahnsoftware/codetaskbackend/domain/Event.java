@@ -11,4 +11,12 @@ public class Event {
     private Address address;
     private Capacity capacity;
     private TimeInterval timeInterval;
+
+    public subscribeAttendant(){
+        if(capacity.hasAvailableSeat()){
+            capacity.addAttendant();
+        }else{
+            throw new EventNotSubscribedException("Event has no available seat.");
+        }
+    }
 }
