@@ -1,4 +1,4 @@
-package com.hahnsoftware.codetaskbackend.infrastructure;
+package com.hahnsoftware.codetaskbackend.infrastructure.entities;
 
 import jakarta.persistence.Embeddable;
 import jakarta.validation.constraints.NotNull;
