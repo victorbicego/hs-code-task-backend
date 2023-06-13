@@ -4,13 +4,10 @@ import jakarta.persistence.Embeddable;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import java.time.LocalDateTime;
-
 @Data
 @Embeddable
-public class TimeIntervalEntity {
+public class CapacityEntity {
     @NotNull
-    private LocalDateTime startTime;
-    @NotNull
-    private LocalDateTime endTime;
+    private int maxCapacity;
+    private int actualCapacity;
 }
