@@ -1,9 +1,11 @@
 package com.hahnsoftware.codetaskbackend.domain;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data
 public class Capacity {
+    @NotNull
     private int maxCapacity;
     private int actualCapacity;
 
